@@ -1,0 +1,226 @@
+html{
+    font-size: 10px;
+  
+  }
+  *{
+    box-sizing: border-box;
+  
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    background-color: rgba(244,244,244);
+    color:#333;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  small{
+    font-size: 1.2rem;
+  }
+  .container
+  {
+    margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space;
+    max-width: 1000px;
+    padding: 40px;
+    height:auto;
+    
+  }
+  .title
+  {
+    font-size: 4.4rem;
+    
+    text-align: center;
+  }
+  .form
+  {
+    display: grid;
+  }
+  .label
+  {
+    font-size:1.6rem;
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+  }
+  .input
+  {
+    font-size: 1.6rem;
+    padding: 0.5rem 2.2srem;
+    line-height: 2.8rem;
+    border-radius: 20px;
+    border:1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  .button
+  {
+    background-color: rgba(0,0,0,0.75);
+    color:white;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(0,0,0,0.75);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 250ms;
+  }
+  .button:hover{
+    background-color: rgba(0,0,0,0.85);
+  }
+  @media(min-width:786px)
+  {
+    .form{
+      grid-template-columns: auto 1fr auto;
+      grid-gap:1rem;
+      align-items: center;
+    }
+    .input
+    {
+      margin-bottom: 0;
+    }
+  }
+  .card-list
+  {
+    margin-top:4rem;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    max-width: 1000px;
+    cursor: pointer;
+  }
+  .card
+  {
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    box-shadow:1px 1px 5px rgba(0,0,0,0.25);
+    margin-bottom: 2rem;
+    width: 30rem;
+  
+  }
+  .card-title
+  {
+    margin-bottom:0.5rem;
+    font-size:2.5rem;
+  }
+  .mymodal
+  {
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-evenly;
+  }
+  .myoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .mymodal>.image-div
+  {
+      margin: 1rem;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      
+      border-right: 3px solid grey;
+     ;
+      
+  }
+  .mymodal>.description
+  {
+     display: flex;
+     flex-direction: column;
+    
+     margin:0;
+     padding:0;
+    
+
+  }
+  .description>.movie-title
+  {
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding: 0;
+
+  }
+  
+ .decription>.release-date
+ {
+  display: flex;
+  flex-direction: column;
+  margin:0px;
+  padding: 0px;
+ }
+ .decription>.movie-rating
+ {
+  display: flex;
+  flex-direction: row;
+  margin:0px;
+  padding: 0px;
+ }
+ .decription>.overview
+ {
+  display: flex;
+  flex-direction: column;
+  max-height: 1rem;
+  margin:0px;
+  padding: 0px;
+  
+ }
+ 
+  .mymodal>.closebutton{
+     height:2.5rem;
+     width:2.5rem; 
+  }
+  .mymodal>.prevButton{
+    display: flex;
+    align-items: center;
+  }
+  .mymodal>.nextButton
+  {
+    display: flex;
+    align-items: center;
+  }
+  a{
+    text-decoration:none;
+    display: flex;
+    font-size: large;
+    padding: 8px 16px;
+  }
+  
+  a:hover {
+    background-color: rgb(148, 140, 140);
+    color: black;
+  }
+  
+  .previous {
+    background-color: #868181;
+    color: black;
+  }
+  
+  .next {
+    background-color: #868181;
+    color: black;
+  }
+  .round {
+    border-radius: 50%;
+  }
+  
+  
